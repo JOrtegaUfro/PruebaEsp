@@ -1,0 +1,31 @@
+###BATALLA###Juancho|KNIGHT|134 de vida vs Luchito|KNIGHT|113 de vida
+Turno 2
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 113
+Luchito ataca con Hurricane … Da en el blanco!. La vida del Juancho queda en 112
+Turno 3
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 113
+Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 97
+Turno 4
+Juancho ataca conSword Cleave…Falla!. La vida del Luchitose mantiene en 113
+Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 82
+Turno 5
+Juancho ataca conSword Cleave…Falla!. La vida del Luchitose mantiene en 113
+Luchito ataca con Hurricane … Da en el blanco!. La vida del Juancho queda en 60
+Turno 6
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 113
+Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 45
+Turno 7
+Juancho ataca con Sword Cleave … Da en el blanco!. La vida del Luchito queda en 105
+Luchito ataca conHurricane…Falla!. La vida del Juanchose mantiene en 45
+Turno 8
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 105
+Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 30
+Turno 9
+Juancho ataca con Sword Cleave … Da en el blanco!. La vida del Luchito queda en 97
+Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 15
+Turno 10
+Juancho ataca conSword Cleave…Falla!. La vida del Luchitose mantiene en 97
+Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 0
+Juancho fallo 7 veces 
+Luchito fallo 1 veces 
+Luchito gana la batalla
