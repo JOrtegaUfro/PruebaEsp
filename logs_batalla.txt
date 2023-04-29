@@ -1,31 +1,64 @@
-###BATALLA###Juancho|KNIGHT|134 de vida vs Luchito|KNIGHT|113 de vida
+###BATALLA###
+Juancho|KNIGHT|116 de vida vs Luchito|KNIGHT|197 de vida
+Turno 1
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 197
+Luchito ataca conFrost Nova…Falla!. La vida del Juanchose mantiene en 116
 Turno 2
-Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 113
-Luchito ataca con Hurricane … Da en el blanco!. La vida del Juancho queda en 112
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 197
+Luchito ataca con Earthquake … Da en el blanco!. La vida del Juancho queda en 104
 Turno 3
-Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 113
-Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 97
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 197
+Luchito ataca con Earthquake…Falla!. La vida del Juanchose mantiene en 104
 Turno 4
-Juancho ataca conSword Cleave…Falla!. La vida del Luchitose mantiene en 113
-Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 82
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 197
+Luchito ataca conFrost Nova…Falla!. La vida del Juanchose mantiene en 104
 Turno 5
-Juancho ataca conSword Cleave…Falla!. La vida del Luchitose mantiene en 113
-Luchito ataca con Hurricane … Da en el blanco!. La vida del Juancho queda en 60
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 197
 Turno 6
-Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 113
-Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 45
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 197
+Luchito ataca con Earthquake … Da en el blanco!. La vida del Juancho queda en 92
 Turno 7
-Juancho ataca con Sword Cleave … Da en el blanco!. La vida del Luchito queda en 105
-Luchito ataca conHurricane…Falla!. La vida del Juanchose mantiene en 45
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 197
+Luchito ataca con Earthquake…Falla!. La vida del Juanchose mantiene en 92
 Turno 8
-Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 105
-Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 30
+Juancho ataca con Sword Thrust … Da en el blanco!. La vida del Luchito queda en 177
+Luchito ataca con Earthquake … Da en el blanco!. La vida del Juancho queda en 80
 Turno 9
-Juancho ataca con Sword Cleave … Da en el blanco!. La vida del Luchito queda en 97
-Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 15
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 177
 Turno 10
-Juancho ataca conSword Cleave…Falla!. La vida del Luchitose mantiene en 97
-Luchito ataca con Poison Cloud … Da en el blanco!. La vida del Juancho queda en 0
-Juancho fallo 7 veces 
-Luchito fallo 1 veces 
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca con Earthquake … Da en el blanco!. La vida del Juancho queda en 68
+Turno 11
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca con Frost Nova … Da en el blanco!. La vida del Juancho queda en 58
+Turno 12
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca conFrost Nova…Falla!. La vida del Juanchose mantiene en 58
+Turno 13
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca conFrost Nova…Falla!. La vida del Juanchose mantiene en 58
+Turno 14
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca con Frost Nova … Da en el blanco!. La vida del Juancho queda en 48
+Turno 15
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca con Frost Nova … Da en el blanco!. La vida del Juancho queda en 38
+Turno 16
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca con Earthquake … Da en el blanco!. La vida del Juancho queda en 26
+Turno 17
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca conFrost Nova…Falla!. La vida del Juanchose mantiene en 26
+Turno 18
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca con Earthquake … Da en el blanco!. La vida del Juancho queda en 14
+Turno 19
+Juancho ataca conSword Thrust…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca con Earthquake … Da en el blanco!. La vida del Juancho queda en 2
+Turno 20
+Juancho ataca conFist Punch…Falla!. La vida del Luchitose mantiene en 177
+Luchito ataca con Earthquake … Da en el blanco!. ElJuancho ya no puede continuar 
+### RESUMEN ### 
+El Juancho fallo 19 veces su ataque
+El Luchito fallo 9 veces su ataque
 Luchito gana la batalla

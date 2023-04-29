@@ -29,6 +29,7 @@ function ataqueAcertadoPerUno(ataqueInicial, personajeUno, personajeDos) {
   var probabilidad = getRandom(100, 1);
   if (ataqueInicial === 1) {
     if (probabilidad > personajeUno.firstAttack.accuracy) {
+      if((personajeDos.health - personajeUno.firstAttack.damage)>0){
       archivo= archivo+(
         personajeUno.name +
           " ataca con " +
@@ -38,6 +39,16 @@ function ataqueAcertadoPerUno(ataqueInicial, personajeUno, personajeDos) {
           " queda en " +
           (personajeDos.health - personajeUno.firstAttack.damage)+'\n'
       );
+    }else{
+      archivo= archivo+(
+        personajeUno.name +
+          " ataca con " +
+          personajeUno.firstAttack.name +
+          " … Da en el blanco!. El " +
+          personajeDos.name +
+          " ya no puede continuar " +'\n'
+      );
+    }
       result = personajeUno.firstAttack.damage;
     } else if (probabilidad < personajeUno.firstAttack.accuracy) {
       archivo= archivo+(
@@ -48,11 +59,12 @@ function ataqueAcertadoPerUno(ataqueInicial, personajeUno, personajeDos) {
           personajeDos.name +
           "se mantiene en " +
           personajeDos.health
-      )+'\n';
+      +'\n');
       result = 0;
     }
   } else if (ataqueInicial === 2) {
     if (probabilidad > personajeUno.secondAttack.accuracy) {
+      if((personajeDos.health - personajeUno.secondAttack.damage)>0){
       archivo= archivo+(
         personajeUno.name +
           " ataca con " +
@@ -62,6 +74,16 @@ function ataqueAcertadoPerUno(ataqueInicial, personajeUno, personajeDos) {
           " queda en " +
           (personajeDos.health - personajeUno.secondAttack.damage)
       )+'\n';
+    }else{
+      archivo= archivo+(
+        personajeUno.name +
+          " ataca con " +
+          personajeUno.secondAttack.name +
+          " … Da en el blanco!.El " +
+          personajeDos.name +
+          " ya no puede continuar ") +
+          '\n';
+    }
       result = personajeUno.secondAttack.damage;
     } else if (probabilidad < personajeUno.secondAttack.accuracy) {
       archivo= archivo+(
@@ -84,6 +106,7 @@ function ataqueAcertadoPerDos(ataqueInicial, personajeDos, personajeUno) {
   var probabilidad = getRandom(100, 1);
   if (ataqueInicial === 1) {
     if (probabilidad < personajeDos.firstAttack.accuracy) {
+      if((personajeUno.health - personajeDos.firstAttack.damage)>0){
       archivo= archivo+(
         personajeDos.name +
           " ataca con " +
@@ -93,6 +116,16 @@ function ataqueAcertadoPerDos(ataqueInicial, personajeDos, personajeUno) {
           " queda en " +
           (personajeUno.health - personajeDos.firstAttack.damage)
       )+'\n';
+    }else{
+      archivo= archivo+(
+        personajeDos.name +
+          " ataca con " +
+          personajeDos.firstAttack.name +
+          " … Da en el blanco!. El " +
+          personajeUno.name +
+          " ya no puede continuar " 
+      )+'\n';
+    }
       result = personajeDos.firstAttack.damage;
     } else if (probabilidad > personajeDos.firstAttack.accuracy) {
       archivo= archivo+(
@@ -108,6 +141,7 @@ function ataqueAcertadoPerDos(ataqueInicial, personajeDos, personajeUno) {
     }
   } else if (ataqueInicial === 2) {
     if (probabilidad < personajeDos.secondAttack.accuracy) {
+      if((personajeUno.health - personajeDos.secondAttack.damage)>0){
       archivo= archivo+(
         personajeDos.name +
           " ataca con " +
@@ -117,6 +151,16 @@ function ataqueAcertadoPerDos(ataqueInicial, personajeDos, personajeUno) {
           " queda en " +
           (personajeUno.health - personajeDos.secondAttack.damage)
       )+'\n';
+    }else{
+      archivo= archivo+(
+      personajeDos.name +
+      " ataca con " +
+      personajeDos.secondAttack.name +
+      " … Da en el blanco!. El" +
+      personajeUno.name +
+      " ya no puede continuar "
+  )+'\n';
+    }
       result = personajeDos.secondAttack.damage;
     } else if (probabilidad > personajeDos.secondAttack.accuracy) {
       archivo= archivo+(
@@ -185,13 +229,14 @@ function getClass(max, min) {
   return clases[result];
 }
 function ganador(personajeUno, personajeDos) {
+  archivo= archivo+('### RESUMEN ### '+ '\n');
   if (personajeDos.health <= 0) {
-    archivo= archivo+(personajeUno.name +' fallo '+personajeUno.fallo+' veces '+ '\n');
-    archivo= archivo+(personajeDos.name +' fallo '+personajeDos.fallo+' veces '+ '\n');
+    archivo= archivo+('El '+personajeUno.name +' fallo '+personajeUno.fallo+' veces su ataque'+ '\n');
+    archivo= archivo+('El '+personajeDos.name +' fallo '+personajeDos.fallo+' veces su ataque'+ '\n');
     archivo= archivo+(personajeUno.name + " gana la batalla");
   } else if (personajeUno.health <= 0) {
-    archivo= archivo+(personajeUno.name +' fallo '+personajeUno.fallo+' veces '+ '\n');
-    archivo= archivo+(personajeDos.name +' fallo '+personajeDos.fallo+' veces '+ '\n');
+    archivo= archivo+('El '+personajeUno.name +' fallo '+personajeUno.fallo+' veces su ataque'+ '\n');
+    archivo= archivo+('El '+personajeDos.name +' fallo '+personajeDos.fallo+' veces su ataque'+ '\n');
     archivo= archivo+(personajeDos.name + " gana la batalla");
   }
 }
@@ -210,7 +255,7 @@ function iniciador(personajeUno, personajeDos) {
 function pelea(personajeUno, personajeDos) {
 
    
-  archivo= archivo+("###BATALLA###");
+  archivo= archivo+("###BATALLA###"+'\n');
   archivo= archivo+(
     personajeUno.name +
       "|" +
@@ -226,9 +271,8 @@ function pelea(personajeUno, personajeDos) {
       " de vida"
   )+'\n';
   const primero = iniciador(personajeUno, personajeDos);
-  var turno = 1;
-  var falloUno;
-  var falloDos;
+  var turno = 0;
+
   if (primero === 1) {
     
     do {
