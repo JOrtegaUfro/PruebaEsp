@@ -6,7 +6,7 @@ const clasePersonajeUno = getClass(3, 0);
 const clasePersonajeDos = getClass(3, 0);
 
 var personajeUno = {
-  name: "Juancho",
+  name: "Charmander",
   clase: clasePersonajeUno,
   firstAttack: getAtaque(clasePersonajeUno),
   secondAttack: getAtaqueDos(clasePersonajeUno),
@@ -16,7 +16,7 @@ var personajeUno = {
 };
 
 var personajeDos = {
-  name: "Luchito",
+  name: "Golem",
   clase: clasePersonajeUno,
   firstAttack: getAtaque(clasePersonajeDos),
   secondAttack: getAtaqueDos(clasePersonajeDos),
