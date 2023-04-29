@@ -24,8 +24,9 @@ var personajeDos = {
   speed: getSpeed(1, 10),
   fallo: 0
 };
+
 var archivo = '';
-function ataqueAcertadoPerUno(ataqueInicial, personajeUno, personajeDos) {
+function ataqueAcertado(ataqueInicial, personajeUno, personajeDos) {
   var probabilidad = getRandom(100, 1);
   if (ataqueInicial === 1) {
     if (probabilidad > personajeUno.firstAttack.accuracy) {
@@ -88,7 +89,7 @@ function ataqueAcertadoPerUno(ataqueInicial, personajeUno, personajeDos) {
     } else if (probabilidad < personajeUno.secondAttack.accuracy) {
       archivo= archivo+(
         personajeUno.name +
-          " ataca con" +
+          " ataca con " +
           personajeUno.secondAttack.name +
           "…Falla!. La vida del " +
           personajeDos.name +
@@ -102,81 +103,7 @@ function ataqueAcertadoPerUno(ataqueInicial, personajeUno, personajeDos) {
   return result;
 }
 
-function ataqueAcertadoPerDos(ataqueInicial, personajeDos, personajeUno) {
-  var probabilidad = getRandom(100, 1);
-  if (ataqueInicial === 1) {
-    if (probabilidad < personajeDos.firstAttack.accuracy) {
-      if((personajeUno.health - personajeDos.firstAttack.damage)>0){
-      archivo= archivo+(
-        personajeDos.name +
-          " ataca con " +
-          personajeDos.firstAttack.name +
-          " … Da en el blanco!. La vida del " +
-          personajeUno.name +
-          " queda en " +
-          (personajeUno.health - personajeDos.firstAttack.damage)
-      )+'\n';
-    }else{
-      archivo= archivo+(
-        personajeDos.name +
-          " ataca con " +
-          personajeDos.firstAttack.name +
-          " … Da en el blanco!. El " +
-          personajeUno.name +
-          " ya no puede continuar " 
-      )+'\n';
-    }
-      result = personajeDos.firstAttack.damage;
-    } else if (probabilidad > personajeDos.firstAttack.accuracy) {
-      archivo= archivo+(
-        personajeDos.name +
-          " ataca con" +
-          personajeDos.firstAttack.name +
-          "…Falla!. La vida del " +
-          personajeUno.name +
-          "se mantiene en " +
-          personajeUno.health
-      )+'\n';
-      result = 0;
-    }
-  } else if (ataqueInicial === 2) {
-    if (probabilidad < personajeDos.secondAttack.accuracy) {
-      if((personajeUno.health - personajeDos.secondAttack.damage)>0){
-      archivo= archivo+(
-        personajeDos.name +
-          " ataca con " +
-          personajeDos.secondAttack.name +
-          " … Da en el blanco!. La vida del " +
-          personajeUno.name +
-          " queda en " +
-          (personajeUno.health - personajeDos.secondAttack.damage)
-      )+'\n';
-    }else{
-      archivo= archivo+(
-      personajeDos.name +
-      " ataca con " +
-      personajeDos.secondAttack.name +
-      " … Da en el blanco!. El" +
-      personajeUno.name +
-      " ya no puede continuar "
-  )+'\n';
-    }
-      result = personajeDos.secondAttack.damage;
-    } else if (probabilidad > personajeDos.secondAttack.accuracy) {
-      archivo= archivo+(
-        personajeDos.name +
-          " ataca con " +
-          personajeDos.secondAttack.name +
-          "…Falla!. La vida del " +
-          personajeUno.name +
-          "se mantiene en " +
-          personajeUno.health
-      )+'\n';
-      result = 0;
-    }
-  }
-  return result;
-}
+
 
 function getAtaque(clase) {
   if (clase === "KNIGHT" || clase === "WARRIOR") {
@@ -280,7 +207,7 @@ function pelea(personajeUno, personajeDos) {
         archivo= archivo+('Turno '+turno+'\n');
       if (personajeUno.health > 0) {
         var ataqueInicialUno = getRandom(2, 1);
-        var aciertoUno = ataqueAcertadoPerUno(
+        var aciertoUno = ataqueAcertado(
           ataqueInicialUno,
           personajeUno,
           personajeDos
@@ -293,7 +220,7 @@ function pelea(personajeUno, personajeDos) {
           }
         if (personajeDos.health > 0 && personajeUno.health > 0) {
           var ataqueInicialDos = getRandom(2, 1);
-          var aciertoDos = ataqueAcertadoPerDos(
+          var aciertoDos = ataqueAcertado(
             ataqueInicialDos,
             personajeDos,
             personajeUno
@@ -313,7 +240,7 @@ function pelea(personajeUno, personajeDos) {
         archivo= archivo+('Turno '+turno+'\n');
       if (personajeUno.health > 0) {
         var ataqueInicialUno = getRandom(2, 1);
-        var aciertoUno = ataqueAcertadoPerUno(
+        var aciertoUno = ataqueAcertado(
           ataqueInicialUno,
           personajeUno,
           personajeDos
@@ -324,7 +251,7 @@ function pelea(personajeUno, personajeDos) {
           }
         if (personajeDos.health > 0 && personajeUno.health > 0) {
           var ataqueInicialDos = getRandom(2, 1);
-          var aciertoDos = ataqueAcertadoPerDos(
+          var aciertoDos = ataqueAcertado(
             ataqueInicialDos,
             personajeDos,
             personajeUno
